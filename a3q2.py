@@ -11,6 +11,7 @@
 # Synopsis:
 #    S debugging exercise, relevant to Chapter 3 and 7
 
+test = [1, 2, 3]
 
 def copy1(data):
     """
@@ -22,7 +23,6 @@ def copy1(data):
     """
     copied = data
     return copied
-
 
 def copy2(data):
     """
@@ -53,15 +53,15 @@ def copy3(data):
         d = data[i]
         data.remove(d)
         copied.append(d)
-    return copied 
-   
+    return copied
+
 
 def copy4(data, copy):
     """
     Copies the given list of data.
     Preconditions:
         :param data: a list
-        :param copy: an empty list 
+        :param copy: an empty list
     Post-conditions:
         copy has the same contents as data
     :return: None
@@ -69,6 +69,7 @@ def copy4(data, copy):
     copy = list()
     for d in data:
         copy.append(d)
+
     return None
 
 
@@ -98,10 +99,19 @@ def selection_sort(unsorted):
     result = list()
 
     # TODO use one of the copy() functions here
-    
+    x = []
+    copy4(unsorted, x)
+
+    print(x)
+
     while len(unsorted) > 0:
         out = min(unsorted)
         unsorted.remove(out)
         result.append(out)
 
+    print(x)
     return result
+
+
+#print(selection_sort([3, 2, 1]))
+print(copy4([3, 2, 1], []))

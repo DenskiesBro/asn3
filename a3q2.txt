@@ -1,0 +1,21 @@
+Question 2:
+
+Copy 1:
+    - Maybe makes a copy (?)
+    - Is not suitable for use
+
+Copy 2:
+    - Does not make copy
+    - Is not suitable to use
+
+Copy 3:
+    - Does not make copy
+    - Is not suitable to use
+
+Copy 4:
+    - Does make a copy
+    - Is suitable to use
+
+Copy 5:
+    - Does make ae copy
+    - Is suitable to use

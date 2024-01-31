@@ -15,9 +15,15 @@
 def newtonraphson(x):
     """
     Purpose:
-
-
+        To compute the square root of a given integer
+    Pre-Conditions:
+        An integer, x
+    Post-Conditions:
+        None
+    Return:
+        The root of the integer
     """
+
     root = 1
     while abs(x - root * root) > 0.00001:
         root = (x/root + root) / 2.0
@@ -25,7 +31,14 @@ def newtonraphson(x):
  
  
 def gcd(a, b):
-    """ Add the doc-string! """
+    """
+    Purpose:
+        To compute the greatest divisor of two inputted integers
+    Pre-conditions:
+        Two integers, a and b
+    Post-Conditions:
+    """
+
     while a != b:
         if a > b:
             a = a - b
@@ -33,6 +46,8 @@ def gcd(a, b):
             b = b - a
     print(a)
 
+
+gcd(4, 4)
 
 def read_triangle(filename):
     """ Add the doc-string! """
@@ -54,6 +69,3 @@ def remdup(alist):
         while alist[i] in alist[i+1:]:
             del alist[i]
     alist.reverse()
-
-
-print(newtonraphson(64))
