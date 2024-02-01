@@ -1,21 +1,21 @@
 Question 2:
 
 Copy 1:
-    - Maybe makes a copy (?)
+    - Makes a shallow copy using a reference to the original list
     - Is not suitable for use
 
 Copy 2:
-    - Does not make copy
+    - Does not make copy as there is an error in the code
     - Is not suitable to use
 
 Copy 3:
-    - Does not make copy
+    - Does not make copy as there is an error in the code
     - Is not suitable to use
 
 Copy 4:
-    - Does make a copy
-    - Is suitable to use
+    - Makes a deep copy of the list instead of just using a reference
+    - Is not suitable to use as it returns "none"
 
 Copy 5:
-    - Does make ae copy
-    - Is suitable to use
+    - Makes a deep copy of the list instead of just using a reference
+    - Is not suitable to use as it returns "none"

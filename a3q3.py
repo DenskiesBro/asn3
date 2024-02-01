@@ -37,20 +37,23 @@ def gcd(a, b):
     Pre-conditions:
         Two integers, a and b
     Post-Conditions:
-    """
 
+    """
     while a != b:
         if a > b:
             a = a - b
         else:
             b = b - a
-    print(a)
 
+    return a
 
-gcd(4, 4)
 
 def read_triangle(filename):
-    """ Add the doc-string! """
+    """
+    Purpose: To read a Pascal triangle into a list and print out its size and the triangle itself
+
+
+    """
     file = open(filename)
     triangle = []
     for line in file:
@@ -69,3 +72,7 @@ def remdup(alist):
         while alist[i] in alist[i+1:]:
             del alist[i]
     alist.reverse()
+    return alist
+
+
+#print(gcd(0, 1))
