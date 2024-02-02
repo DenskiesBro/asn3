@@ -29,7 +29,6 @@ def newtonraphson(x):
         root = (x/root + root) / 2.0
     return root
  
- 
 def gcd(a, b):
     """
     Purpose:
@@ -63,7 +62,9 @@ def read_triangle(filename):
     file.close()
     size = triangle[0][0]
     triangle = triangle[1:]
-    return (size, triangle)
+
+    return size, triangle
+
 
 def remdup(alist):
     """ Add the doc-string! """
@@ -74,5 +75,3 @@ def remdup(alist):
     alist.reverse()
     return alist
 
-
-#print(gcd(0, 1))

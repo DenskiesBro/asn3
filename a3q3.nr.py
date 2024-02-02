@@ -1,33 +1,36 @@
 import a3q3 as asn3
 
-# gcd_test_cases = [[49, 7], (8, 63), (250, 250), ()]
-
-gcd_test_cases = [
+nr_test_cases = [
     {
-        "input": (63, 9),
-        "expected": 9,
+        "input": 64,
+        "expected": 8.00000000000017,
         "reason": "Testing a > b"
     },
+
     {
-        "input": (7, 49),
-        "expected": 7,
+        "input": 0.5,
+        "expected": 0.7071078431372548,
         "reason": "Testing a < b"
     },
 
     {
-        "input": (250, 250),
-        "expected": 250,
+        "input": 0,
+        "expected": 0.001953125,
         "reason": "Testing a = b"
 
     },
+
+    {
+        "input": 1,
+        "expected": 1,
+        "reason": "Testing a = b"
+    }
 ]
 
-for testcase in gcd_test_cases:
+for testcase in nr_test_cases:
     inputs = testcase['input']
     expected = testcase['expected']
-    result = asn3.gcd(inputs[0], inputs[1])
-    if result == expected:
-        print("it works")
+    result = asn3.newtonraphson(inputs)
 
     if result != expected:
         print('Error: returned', result,

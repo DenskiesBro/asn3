@@ -11,8 +11,6 @@
 # Synopsis:
 #    S debugging exercise, relevant to Chapter 3 and 7
 
-test = [1, 2, 3]
-
 def copy1(data):
     """
     Returns a copy of the given list of data
@@ -99,19 +97,10 @@ def selection_sort(unsorted):
     result = list()
 
     # TODO use one of the copy() functions here
-    x = []
-    copy4(unsorted, x)
-
-    print(x)
 
     while len(unsorted) > 0:
         out = min(unsorted)
         unsorted.remove(out)
         result.append(out)
 
-    print(x)
     return result
-
-
-#print(selection_sort([3, 2, 1]))
-print(copy4([3, 2, 1], []))
